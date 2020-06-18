@@ -26,10 +26,10 @@ router.get('/all', async (req: Request, res: Response) => {
         } else {
             result.push(data);
         }
-        console.log(data);
+        console.log(result);
     });
 
-    return res.status(OK).json({ users });
+    return res.status(OK).json({ result });
 });
 
 export default router;
